@@ -11,7 +11,6 @@ type AllType = {
     weight: number;
   };
   
-  // Функція compare з використанням Pick і generics
   function compare<T extends Pick<AllType, 'name' | 'color'>, U extends Pick<AllType, 'position' | 'weight'>>(
     top: T,
     bottom: U
@@ -24,7 +23,7 @@ type AllType = {
     };
   }
   
-  // Приклад використання
+  // Приклад 
   const top = { name: "Item A", color: "Red" };
   const bottom = { position: 42, weight: 10 };
   
